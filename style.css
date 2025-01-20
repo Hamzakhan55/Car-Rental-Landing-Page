@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+@keyframes appear {
+    from {
+        opacity: 0.7;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+
+.main-body span{
+    animation: appear 3s linear;
+}
+
+.main-body a{
+    animation: appear 5s linear;
+}
+
+.container {
+    animation: appear 1s linear;
+    animation-timeline: view();
+}
+
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 1000;
+    font-style: italic;
+    color: #000;
+}
+
+.zen {
+    color: red;
+}
+
+.menu-list a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #000;
+    position: relative;
+    font-size: 15px;
+}
+
+.menu-list a:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid red;
+    transition: 0.4s linear;
+}
+
+.menu-list a:hover:before {
+    width: 90%;
+}
+
+.login a {
+    color: #000;
+    background: red;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid red;
+    border-radius: 20px;
+    transition: 0.5s;
+    letter-spacing: 2px;
+}
+
+.login a:hover {
+    background: transparent;
+    border: 1px solid red
+}
+
+.main-body {
+    width: 100%;
+    height: 40rem;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url(/assests/8.jpg);
+    background-size: cover;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: -5px;
+    font-family: 'Bebas Neue';
+    padding: 20px;
+}
+
+#Rental {
+    color: red;
+}
+
+.main-body a {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    text-decoration: none;
+    background: red;
+    padding: 10px 20px;
+    border: 2px solid red;
+    border-radius: 20px;
+    letter-spacing: 4px;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.main-body a:hover {
+    background: transparent;
+    border: 1px solid red;
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card {
+    width: 200px;
+    height: 200px;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    border: 4px solid #000;
+    margin-bottom: 40px;
+}
+.card img {
+    height: 130px;
+    width: 100%;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro h3 {
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.intro p {
+    opacity: 0.7;
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+.Explore-text {
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.rent-a-car {
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)), url(/assests/1.jpg) center;
+    /* border-radius: 10px; */
+    background-size: cover;
+
+}
+
+.rent-a-car{
+    padding: 40px;
+}
+.looking-text {
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: -3px;
+}
+
+.rent-a-car p {
+    color: #fff;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+.rent-a-car a {
+    text-decoration: none;
+    color: #fff;
+    background-color: red;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.rent-a-car a:hover {
+    background: transparent;
+    border: 1px solid red;
+}
+
+.car-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    /* margin: 20px; */
+    /* justify-content: center; */
+}
+
+.c-card {
+    width: 200px;
+    height: 300px;
+    margin: 15px;
+    border: 2px solid ;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.c-card img {
+    width: 100%;
+    height: 150px;
+}
+
+.c-card h3 {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.c-card p {
+    text-align: center;
+    padding: 2px;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.c-card h6 {
+    font-size: 16px;
+    margin: 10px;
+    display: inline;
+}
+
+.c-card a {
+    text-decoration: none;
+    margin: 10px;
+    /* background: red; */
+    padding: 2px;
+    border: 1.5px solid red;
+    border-radius: 20px;
+    color: #000;
+}
+
